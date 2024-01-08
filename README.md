@@ -81,11 +81,15 @@
 <br>
 
 # 5. 검증 및 테스트
-- 검증
+
+### 검증
+
+- 다른 팀들에 비해 다른 작업을 안했는데도 결과값이 좋음
+- 데이터 유실 및 파괴가 없는 방식(시간이 오래 걸리는 방식)으로 진행하여 그런 것으로 추정)
 
 ![b1](https://github.com/sesac-google-ai-1st/gg_duo_yolo/assets/145187337/f9e9c663-e94d-4769-a13d-a03718137a20)
 
-- 테스트
+### 테스트
 
 ![h13](https://github.com/sesac-google-ai-1st/gg_duo_yolo/assets/145187337/cbf31cd1-ce3a-417c-9dd2-c04d5fdf5e87)
 ![h1](https://github.com/sesac-google-ai-1st/gg_duo_yolo/assets/145187337/6af710cb-9b7e-4ed3-b91c-32645193bd99)
@@ -100,6 +104,10 @@
 
 ### 한계
 
+- 대용량 데이터를 다루다 보니 유실 및 파괴가 있는데 잘 처리 필요 
+- 멀티 GPU 사용하려는데 오류가 생김
+- pip install ultralytics, git clone https://github.com/ultralytics/ultralytics 둘 다 하면 사용 가능해짐
+- 멀티 GPU 관련하여 정확한 원인 찾을 필요성 있음
 - 테스트 이미지를 보면 왼쪽 아래쪽에 버스가 아닌데 버스로 인식함
 - 좀 더 많은 버스 데이터로 학습 필요하다고 논의함
 
