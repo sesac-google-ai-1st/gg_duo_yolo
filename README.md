@@ -33,28 +33,64 @@
 
 # 2. 데이터 전처리
 
-- 데이터를 GCP 버킷에 업로드, GCP JUPYTER NOTEBOOK에서 버킷 데이터 다운로드 및 압축 해제
-- 데이터 정리 및 COCO data 포맷을 YOLO data 포맷으로 변경
+- 데이터를 GCP 버킷에 업로드, GCP JUPYTER NOTEBOOK에서 버킷 데이터 다운로드(gsutil 이용)
+- 압축 해제(unzip 시 lock 하고 multiprocessing 사용하면 빠르게 가능)
+
+![h7](https://github.com/sesac-google-ai-1st/gg_duo_yolo/assets/145187337/78138e27-3d33-4b2d-a3ae-b21ad450b5a7)
+
+- 데이터 정리
+- COCO data 포맷을 YOLO data 포맷으로 변경
+
+![h8](https://github.com/sesac-google-ai-1st/gg_duo_yolo/assets/145187337/56dd94aa-bcab-4033-8c25-d1f0bdd5d09f)
+
+- xml 파일을 txt로 변경
 
 <br>
 
 # 3. 학습
 
-- git clone ultralytics, yaml 파일 생성, train, val 폴더 정리
+- git clone ultralytics
+- yaml 파일 생성
+
+![h9](https://github.com/sesac-google-ai-1st/gg_duo_yolo/assets/145187337/46ca2536-70b7-490f-8e22-18b7fc622da0)
+
+![h10](https://github.com/sesac-google-ai-1st/gg_duo_yolo/assets/145187337/c0ce5fef-5310-4eea-8e66-6475dcbc163f)
+
+- train, val 폴더 정리(데이터 개수 확인)
 - 학습
+
+![h12](https://github.com/sesac-google-ai-1st/gg_duo_yolo/assets/145187337/2bc871dc-438e-4205-aeb8-46bc8979ac36)
+
 
 <br>
 
 # 4. 학습 결과
 - confusion matrix
-- graph
+
+![output](https://github.com/sesac-google-ai-1st/gg_duo_yolo/assets/145187337/5376efea-24c7-49ea-bfd6-cd8d520694c5)
+
+- graph, train의 loss 값이 계속 떨어지는 것으로 보아 더 많은 데이터를 학습시킬 필요가 있다고 보임
+
+![output1](https://github.com/sesac-google-ai-1st/gg_duo_yolo/assets/145187337/743e764b-23c3-4212-9e28-e79c54f2cbf2)
+
 - image
+
+![output2](https://github.com/sesac-google-ai-1st/gg_duo_yolo/assets/145187337/5db6d884-3607-4d2a-8b9a-6e69ce602c16)
+
 
 <br>
 
 # 5. 검증 및 테스트
 - 검증
+
+![b1](https://github.com/sesac-google-ai-1st/gg_duo_yolo/assets/145187337/f9e9c663-e94d-4769-a13d-a03718137a20)
+
 - 테스트
+
+![h13](https://github.com/sesac-google-ai-1st/gg_duo_yolo/assets/145187337/cbf31cd1-ce3a-417c-9dd2-c04d5fdf5e87)
+![h5](https://github.com/sesac-google-ai-1st/gg_duo_yolo/assets/145187337/352ad4f3-d9bf-486c-b5c8-c305a45dbee2)
+![h31](https://github.com/sesac-google-ai-1st/gg_duo_yolo/assets/145187337/907f6eee-3e2e-475a-89ac-14087aab7a2d)
+
 
 <br>
 
